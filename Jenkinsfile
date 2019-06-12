@@ -6,7 +6,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn package'        
+        def mvnHome = tool 'maven'
+        sh '$mvnHome/bin/mvn package'        
       }
     }
   }
