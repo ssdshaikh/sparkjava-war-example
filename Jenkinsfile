@@ -14,7 +14,7 @@ pipeline {
       }
     stage('Build') {
       steps {
-        sh '$mvnHome/bin/mvn package'        
+        sh 'mvn package'        
       }
     }
   }
