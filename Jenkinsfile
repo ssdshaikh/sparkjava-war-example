@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'mvn sonar:sonar deploy'
+        sh 'mvn sonar:sonar install'
       }
     }
   }
